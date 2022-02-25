@@ -4,15 +4,14 @@ public class Movie {
     private String title;
     private Rating rating;
     private Double ranking;
+    private Integer minLength;
 
 
-
-
-
-    public Movie(String title, Rating rating, Double ranking){
+    public Movie(String title, Rating rating, Double ranking, Integer minLength){
         this.title = title;
         this.rating = rating;
         this.ranking = ranking;
+        this.minLength = minLength;
     }
 
     public Rating getRating() {
@@ -23,22 +22,32 @@ public class Movie {
     }
 
     public String getTitle() {
-        return null;
+        return title;
+    }
+
+    public Integer getMinLength() {
+        return minLength;
     }
 
     public void setTitle(String title) {
-
+        this.title = title;
     }
     public void setRating(Rating rating) {
         this.rating= rating;
     }
-    public void setRanking(double ranking) {
+    public void setRanking(Double ranking) {
         this.ranking = ranking;
     }
+
+    public void setMinLength(Integer minLength) {
+        this.minLength = minLength;
+    }
+
     @Override
     public String toString() {
         return "Movie: " + title + " " +
                 "Rating: " + rating + " "
-                + "Ranking: " + ranking;
+                + "Ranking: " + ranking + " "
+                + "Length: " + minLength;
     }
 }
