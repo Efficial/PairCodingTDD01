@@ -9,9 +9,9 @@ public class MovieTest {
 
     public void constructorTest01(){
 
-        Movie movie = new Movie("Spawn");
+        Movie movie = new Movie("Spawn", Rating.PG13);
 
-        String expected = "Movie: Spawn";
+        String expected = "Movie: Spawn Rating: PG13";
         String actual = movie.toString();
         Assertions.assertEquals(expected, actual);
     }

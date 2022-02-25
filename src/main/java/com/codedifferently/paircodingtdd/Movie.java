@@ -2,8 +2,19 @@ package com.codedifferently.paircodingtdd;
 
 public class Movie {
     private String title;
+    private Rating rating;
 
-    public Movie(String title){
+    public Movie(String title, Rating rating){
+        this.title = title;
+        this.rating = rating;
+    }
+
+    public Rating getRating() {
+        return null;
+    }
+
+    public void setRating(Rating rating) {
+
     }
 
     public String getTitle() {
@@ -15,6 +26,6 @@ public class Movie {
 
     @Override
     public String toString() {
-        return null;
+        return "Movie: " + title + " " + "Rating: " + rating;
     }
 }
