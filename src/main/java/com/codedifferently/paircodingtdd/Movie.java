@@ -16,10 +16,10 @@ public class Movie {
     }
 
     public Rating getRating() {
-        return null;
+        return rating;
     }
     public Double getRanking() {
-        return null;
+        return ranking;
     }
 
     public String getTitle() {
@@ -30,13 +30,15 @@ public class Movie {
 
     }
     public void setRating(Rating rating) {
-
+        this.rating= rating;
     }
     public void setRanking(double ranking) {
-
+        this.ranking = ranking;
     }
     @Override
     public String toString() {
-        return "Movie: " + title + " " + "Rating: " + rating + " " + "Ranking: " + ranking;
+        return "Movie: " + title + " " +
+                "Rating: " + rating + " "
+                + "Ranking: " + ranking;
     }
 }
